@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+span, p, a {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 8rem auto;
+}
+
+.cards-container > * {
+  width: 35rem;
+  height: 50rem;
+  padding: 5rem;
+  border-collapse: separate;
+}
+
+.cards-container > * .cards-header {
+  color: #f2f2f2;
+  font-size: 4rem;
+}
+
+.cards-container > * .cards-body {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.cards-container > * .cards-button {
+  background-color: white;
+  margin: 3.5rem 0 0 0;
+  width: 15rem;
+  line-height: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2.5rem;
+  border: 2px transparent solid;
+  -webkit-transition: .5s background-color;
+  transition: .5s background-color;
+}
+
+.cards-container > * .cards-button a {
+  font-size: 1.5rem;
+}
+
+.cards-container > * #sedans-button:hover {
+  background-color: #e38826;
+  border: 2px white solid;
+}
+
+.cards-container > * #sedans-button:hover a {
+  color: white;
+}
+
+.cards-container > * #sedans-button a {
+  color: #e38826;
+  text-decoration: none;
+}
+
+.cards-container > * #suvs-button:hover {
+  background-color: #006970;
+  border: 2px white solid;
+}
+
+.cards-container > * #suvs-button:hover a {
+  color: white;
+}
+
+.cards-container > * #suvs-button a {
+  color: #006970;
+  text-decoration: none;
+}
+
+.cards-container > * #luxury-button:hover {
+  background-color: #004241;
+  border: 2px white solid;
+}
+
+.cards-container > * #luxury-button:hover a {
+  color: white;
+}
+
+.cards-container > * #luxury-button a {
+  color: #004241;
+  text-decoration: none;
+}
+
+.cards-container .sedans-card {
+  background-color: #e38826;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.cards-container .suvs-card {
+  background-color: #006970;
+}
+
+.cards-container .luxury-card {
+  background-color: #004241;
+  border-radius: 0 0 1rem 1rem;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+/*# sourceMappingURL=main.css.map */

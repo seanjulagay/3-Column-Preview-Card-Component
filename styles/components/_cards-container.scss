@@ -1,0 +1,87 @@
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8rem auto;
+    & > * {
+        width: 35rem;
+        height: 50rem;
+        padding: 5rem;
+        border-collapse: separate;
+        .cards-header {
+            color: $very-light-gray;
+            font-size: 4rem;
+        }
+        .cards-body {
+            color: $transparent-white;
+            font-size: 1.5rem;
+            line-height: 3rem;
+        }
+        .cards-button {
+            background-color: white;
+            margin: 3.5rem 0 0 0;
+            width: 15rem;
+            line-height: 4.5rem;
+            display: flex;
+            justify-content: center;
+            border-radius: 2.5rem;
+            border: 2px transparent solid;
+            transition: .5s background-color;
+            a {
+                font-size: 1.5rem;
+                
+            }
+        }
+        #sedans-button {
+            &:hover {
+                background-color: $bright-orange;
+                border: 2px white solid;
+                a {
+                    color: white;
+                }
+            }
+            a {
+                color: $bright-orange;
+                text-decoration: none;
+            }
+        }
+        #suvs-button {
+            &:hover {
+                background-color: $dark-cyan;
+                border: 2px white solid;
+                a {
+                    color: white;
+                }
+            }
+            a {
+                color: $dark-cyan;
+                text-decoration: none;
+            }
+        }
+        #luxury-button {
+            &:hover {
+                background-color: $very-dark-cyan;
+                border: 2px white solid;
+                a {
+                    color: white;
+                }
+            }
+            a {
+                color: $very-dark-cyan;
+                text-decoration: none;
+            }
+        }
+    }
+    .sedans-card {
+        background-color: $bright-orange;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .suvs-card {
+        background-color: $dark-cyan;
+    }
+    .luxury-card {
+        background-color: $very-dark-cyan;
+        border-radius: 0 0 1rem 1rem;
+    }
+}
